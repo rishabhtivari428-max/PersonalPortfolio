@@ -15,7 +15,7 @@ const frontendProjects = [
   },
   {
     title: "Weather App",
-    description: "A responsive weather application built using React.js that fetches real-time weather data from an external API. Users can search for any city to view current weather conditions including temperature, humidity, and weather status.",
+    description: "A responsive weather application built using React.js that fetches real-time weather data from an external API.",
     tech: ["React", "TailwindCss"],
     image: Image2,
     demo: "https://weather-app-delta-neon.vercel.app/",
@@ -23,7 +23,7 @@ const frontendProjects = [
   },
   {
     title: "Expense Tracker",
-    description: "Manage your money effortlessly with the Expense Tracker app. Keep track of your daily expenses, monitor your spending habits, and stay on top of your budget.",
+    description: "Manage your money effortlessly with the Expense Tracker app. Keep track of your daily expenses and stay on top of your budget.",
     tech: ["React", "Tailwind"],
     image: Image3,
     demo: "https://expensetracker-tau-ten.vercel.app/",
@@ -56,20 +56,12 @@ const ProjectCard = ({ project }) => (
         ))}
       </div>
       <div className="flex gap-4">
-        
-         <a href={project.demo}
-          target="_blank"
-          rel="noreferrer"
-          className="text-white bg-blue-500 px-3 py-1 rounded hover:bg-blue-600 transition"
-        >
+        <a href={project.demo} target="_blank" rel="noreferrer"
+          className="text-white bg-blue-500 px-3 py-1 rounded hover:bg-blue-600 transition">
           Demo
         </a>
-        
-        <a  href={project.github}
-          target="_blank"
-          rel="noreferrer"
-          className="text-white bg-gray-800 px-3 py-1 rounded hover:bg-gray-900 transition"
-        >
+        <a href={project.github} target="_blank" rel="noreferrer"
+          className="text-white bg-gray-800 px-3 py-1 rounded hover:bg-gray-900 transition">
           GitHub
         </a>
       </div>
