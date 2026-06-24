@@ -2,7 +2,8 @@ import React from "react";
 import Image  from '../assets/image.jpg';   
 import Image2 from '../assets/image2.jpg';
 import Image3 from '../assets/Image3.jpg';
-import Image4 from '../assets/Image4.jpg'
+import Image4 from '../assets/Image4.jpg';
+import Image5 from '../assets/Image5.jpg'
 
 const frontendProjects = [
   {
@@ -40,6 +41,14 @@ const fullstackProjects = [
     demo: "https://bloginstaa.netlify.app/",
     github: "https://github.com/rishabhtivari428-max/BlogInsta/tree/main"
   },
+  {
+    title: "Dashh - Productivity Dashboard",
+    description: "A full-stack productivity dashboard built with the MERN stack, featuring JWT-based authentication, notes management, Pomodoro timer, and an activity planner.",
+    tech: ["Nodejs", "Reactjs", "MongoDB", "Express"],
+    image: Image5,
+    demo: "https://productivity-dashboard-4.onrender.com/",
+    github: "https://github.com/rishabhtivari428-max/Productivity-Dashboard"
+  }
 ]
 
 const ProjectCard = ({ project }) => (
