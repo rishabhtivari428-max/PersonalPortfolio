@@ -67,7 +67,7 @@ const Hero = () => {
   </div>
   <div className="hero-bottom flex justify-between w-full px-6 sm:px-16 mt-16 sm:mt-30 text-sm text-white">
     <div>
-      <p className='text-base sm:text-xl font-bold'>MCA Student</p>
+      <p className='text-base sm:text-xl font-bold'>BCA Student</p>
       <p className='text-base sm:text-xl font-bold'>Computer Applications</p>
     </div>
     <div className="text-right">
