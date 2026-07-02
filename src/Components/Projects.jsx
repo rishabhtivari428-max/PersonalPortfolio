@@ -35,7 +35,7 @@ const frontendProjects = [
 
 const fullstackProjects = [
   {
-    title: "BlogInsta",
+    title: "BlogInsta - Blog App",
     description: "A full stack blogging platform where users can register, login, and manage their blogs. Built with a REST API backend and a responsive modern UI.",
     tech: ["Nodejs", "Reactjs", "MongoDB", "Express"],
     image: Image4,
