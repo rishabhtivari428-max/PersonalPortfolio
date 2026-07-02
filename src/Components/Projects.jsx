@@ -10,7 +10,7 @@ const frontendProjects = [
   {
     title: "Notes App",
     description: "A responsive Notes App built with React and Tailwind CSS with CRUD functionality and LocalStorage support.",
-    tech: ["React", "Tailwind", "JS"],
+    tech: ["React", "Tailwind Css", "JS"],
     image: Image,
     demo: "https://vite-react-iyi1.vercel.app/",
     github: "https://github.com/rishabhtivari428-max/notes-app"
@@ -18,7 +18,7 @@ const frontendProjects = [
   {
     title: "Weather App",
     description: "A responsive weather application built using React.js that fetches real-time weather data from an external API.",
-    tech: ["React", "TailwindCss"],
+    tech: ["React", "Tailwind Css"],
     image: Image2,
     demo: "https://weather-app-delta-neon.vercel.app/",
     github: "https://github.com/rishabhtivari428-max/Weather-app"
@@ -26,7 +26,7 @@ const frontendProjects = [
   {
     title: "Expense Tracker",
     description: "Manage your money effortlessly with the Expense Tracker app. Keep track of your daily expenses and stay on top of your budget.",
-    tech: ["React", "Tailwind"],
+    tech: ["React", "Tailwind Css"],
     image: Image3,
     demo: "https://expensetracker-tau-ten.vercel.app/",
     github: "https://github.com/rishabhtivari428-max/expensetracker"
