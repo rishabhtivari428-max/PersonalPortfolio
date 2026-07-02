@@ -3,7 +3,8 @@ import Image  from '../assets/image.jpg';
 import Image2 from '../assets/image2.jpg';
 import Image3 from '../assets/Image3.jpg';
 import Image4 from '../assets/Image4.jpg';
-import Image5 from '../assets/Image5.jpg'
+import Image5 from '../assets/Image5.jpg';
+import Image6 from '../assets/Image6.jpg'
 
 const frontendProjects = [
   {
@@ -48,6 +49,14 @@ const fullstackProjects = [
     image: Image5,
     demo: "https://productivity-dashboard-4.onrender.com/",
     github: "https://github.com/rishabhtivari428-max/Productivity-Dashboard"
+  },
+  {
+    title: "CareerLink - Job Portal",
+    description: "A fullstack job portal where recruiters and company managers find candidates and can select them for interviews, candidates can apply for jobs easily.",
+    tech: ["Nodejs", "Reactjs", "MongoDB", "Express"],
+    image: Image6,
+    demo: "https://career-link-ey8l-blush.vercel.app/",
+    github: "https://github.com/rishabhtivari428-max/CareerLink"
   }
 ]
 
