@@ -6,7 +6,6 @@ import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 import Footer from './Components/Footer'
 import Contact from './Components/Contact'
-import Uselenis from './Uselenis'
 import useLenis from './Uselenis'
 
 const App = () => {
