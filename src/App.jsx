@@ -14,13 +14,11 @@ const App = () => {
    <div className='h-full'>
       <Navbar Name="RishabhXSharma"/>
       <Hero />
-      <div className='bg-black'>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
-      </div>
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
   )
 }
