@@ -52,11 +52,9 @@ const Hero = () => {
       }
     }
 
-    /* Grid lines */
     const drawGrid = (t) => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-      /* Radial glow spots */
       const g1 = ctx.createRadialGradient(
         canvas.width * 0.2, canvas.height * 0.3, 0,
         canvas.width * 0.2, canvas.height * 0.3, canvas.width * 0.42
@@ -75,7 +73,6 @@ const Hero = () => {
       ctx.fillStyle = g2
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      /* Animated perspective grid */
       const cols = 14, rows = 10
       const cellW = canvas.width / cols
       const cellH = canvas.height / rows
@@ -111,7 +108,6 @@ const Hero = () => {
     }
   }, [])
 
-  /* ── GSAP entrance animations ── */
   useEffect(() => {
     const tl = gsap.timeline()
     tl.from('.hero-name', { y: 100, opacity: 0, duration: 1.2, ease: 'power4.out' })
@@ -130,7 +126,6 @@ const Hero = () => {
       id='hero'
       className='relative text-white flex flex-col items-center justify-center mt-20 sm:mt-40 px-4'
     >
-      {/* ── Canvas background ── */}
       <canvas
         ref={canvasRef}
         className='fixed top-0 left-0 w-full h-full -z-10 pointer-events-none'

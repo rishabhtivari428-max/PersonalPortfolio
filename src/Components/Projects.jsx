@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image  from '../assets/Image.jpg'
-import Image2 from '../assets/Image2.jpg'
+import WeatherImage from '../assets/WeatherImage.jpg'
 import Image3 from '../assets/Image3.jpg'
 import Image4 from '../assets/Image4.jpg'
 import Image5 from '../assets/Image5.jpg'
@@ -25,7 +25,7 @@ const frontendProjects = [
     description:
       'A responsive weather application built using React.js that fetches real-time weather data from an external API.',
     tech: ['React', 'Tailwind CSS'],
-    image: Image2,
+    image: WeatherImage,
     demo: 'https://weather-app-delta-neon.vercel.app/',
     github: 'https://github.com/rishabhtivari428-max/Weather-app',
   },
