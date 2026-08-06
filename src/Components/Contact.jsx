@@ -51,7 +51,7 @@ const Contact = () => {
         </a>{' '}
         <span className='contact-word inline-block'>OR</span>{' '}
         <a
-          href='https://www.linkedin.com/in/rishabh-sharma-77b899397'
+          href='https://www.linkedin.com/in/rishabh-sharma-34017740a?utm_source=share_via&utm_content=profile&utm_medium=member_android'
           className='inline-block contact-word'
         >
           <span className='text-transparent stroke-text'>LINKEDIN</span>
