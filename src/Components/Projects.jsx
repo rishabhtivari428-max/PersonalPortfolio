@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Image  from '../assets/Image.jpg'
+import Image from '../assets/Image.jpg'
 import WeatherImage from '../assets/WeatherImage.jpg'
 import Image3 from '../assets/Image3.jpg'
 import Image4 from '../assets/Image4.jpg'
 import Image5 from '../assets/Image5.jpg'
 import Image6 from '../assets/Image6.jpg'
+import NestInImg from '../assets/NestIn.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -42,13 +43,13 @@ const frontendProjects = [
 
 const fullstackProjects = [
   {
-    title: 'BlogInsta — Blog App',
+    title: 'NestIn - Hostel Management System',
     description:
-      'A full stack blogging platform where users can register, login, and manage their blogs. Built with a REST API backend and a responsive modern UI.',
+      'A scalable MERN-stack platform built to streamline hostel discovery, direct tenant-owner communications, and real-time inquiry workflows.',
     tech: ['Node.js', 'React', 'MongoDB', 'Express'],
-    image: Image4,
-    demo: 'https://bloginstaa.netlify.app/',
-    github: 'https://github.com/rishabhtivari428-max/BlogInsta/tree/main',
+    image: NestInImg,
+    demo: 'https://nest-in-hostel-booking-platform.vercel.app/',
+    github: 'https://github.com/rishabhtivari428-max/NestIn-Hostel-booking-platform',
   },
   {
     title: 'Dashh — Productivity Dashboard',
@@ -68,31 +69,42 @@ const fullstackProjects = [
     demo: 'https://career-link-ey8l-blush.vercel.app/',
     github: 'https://github.com/rishabhtivari428-max/CareerLink',
   },
+  {
+    title: 'BlogInsta — Blog App',
+    description:
+      'A full stack blogging platform where users can register, login, and manage their blogs. Built with a REST API backend and a responsive modern UI.',
+    tech: ['Node.js', 'React', 'MongoDB', 'Express'],
+    image: Image4,
+    demo: 'https://bloginstaa.netlify.app/',
+    github: 'https://github.com/rishabhtivari428-max/BlogInsta/tree/main',
+  },
 ]
 
 const ProjectCard = ({ project }) => (
-  <div className='project-card group bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-lime-400 transition-all duration-400 hover:shadow-[0_0_24px_rgba(163,230,53,0.2)]'>
-    <div className='overflow-hidden h-48'>
+  <div className='project-card group bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-lime-400 transition-all duration-400 hover:shadow-[0_0_24px_rgba(163,230,53,0.2)] w-full md:w-[calc((100%-2rem)/2)] lg:w-[calc((100%-4rem)/3)] flex flex-col'>
+    <div className='overflow-hidden h-48 flex-shrink-0'>
       <img
         src={project.image}
         alt={project.title}
         className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-500'
       />
     </div>
-    <div className='p-5'>
-      <h3 className='text-xl font-bold mb-2 text-white'>{project.title}</h3>
-      <p className='text-zinc-400 text-sm mb-4 leading-relaxed'>{project.description}</p>
-      <div className='flex flex-wrap gap-2 mb-4'>
-        {project.tech.map((tech, i) => (
-          <span
-            key={i}
-            className='bg-lime-400/10 text-lime-400 border border-lime-400/30 font-semibold text-xs px-3 py-1 rounded-full'
-          >
-            {tech}
-          </span>
-        ))}
+    <div className='p-5 flex flex-col flex-grow justify-between'>
+      <div>
+        <h3 className='text-xl font-bold mb-2 text-white'>{project.title}</h3>
+        <p className='text-zinc-400 text-sm mb-4 leading-relaxed'>{project.description}</p>
+        <div className='flex flex-wrap gap-2 mb-4'>
+          {project.tech.map((tech, i) => (
+            <span
+              key={i}
+              className='bg-lime-400/10 text-lime-400 border border-lime-400/30 font-semibold text-xs px-3 py-1 rounded-full'
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
       </div>
-      <div className='flex gap-3'>
+      <div className='flex gap-3 pt-2'>
         <a
           href={project.demo}
           target='_blank'
@@ -157,7 +169,7 @@ const Projects = () => {
         <div className='flex justify-center mb-10'>
           <div className='w-20 h-[2px] bg-lime-400 rounded-full'></div>
         </div>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20'>
+        <div className='flex flex-wrap justify-center gap-8 mb-20'>
           {frontendProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
@@ -169,7 +181,7 @@ const Projects = () => {
         <div className='flex justify-center mb-10'>
           <div className='w-20 h-[2px] bg-lime-400 rounded-full'></div>
         </div>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='flex flex-wrap justify-center gap-8'>
           {fullstackProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
