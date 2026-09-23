@@ -148,10 +148,10 @@ const Hero = () => {
           VIEW PROJECTS
         </button>
         <a
-          href='/Resume Full-stack.pdf'
+          href="/Rishabh's Resume Fully Updated.pdf"
           target='_blank'
           rel='noopener noreferrer'
-          download='Resume Full-stack.pdf'
+          download="Rishabh's Resume Fully Updated.pdf"
           className='border-2 px-8 py-2 text-xl sm:text-2xl bg-lime-400 text-black cursor-pointer font-bold border-lime-400 hover:bg-lime-300 transition-all duration-300 inline-block text-center'
         >
           DOWNLOAD CV
