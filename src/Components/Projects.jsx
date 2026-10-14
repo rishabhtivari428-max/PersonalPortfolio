@@ -8,38 +8,9 @@ import Image4 from '../assets/Image4.jpg'
 import Image5 from '../assets/Image5.jpg'
 import Image6 from '../assets/Image6.jpg'
 import NestInImg from '../assets/NestIn.jpg'
+import NestInsecond from '../assets/NestInsecond.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
-
-const frontendProjects = [
-  {
-    title: 'Notes App',
-    description:
-      'A responsive Notes App built with React and Tailwind CSS with CRUD functionality and LocalStorage support.',
-    tech: ['React', 'Tailwind CSS', 'JS'],
-    image: Image,
-    demo: 'https://vite-react-iyi1.vercel.app/',
-    github: 'https://github.com/rishabhtivari428-max/notes-app',
-  },
-  {
-    title: 'Weather App',
-    description:
-      'A responsive weather application built using React.js that fetches real-time weather data from an external API.',
-    tech: ['React', 'Tailwind CSS'],
-    image: WeatherImage,
-    demo: 'https://weather-app-delta-neon.vercel.app/',
-    github: 'https://github.com/rishabhtivari428-max/Weather-app',
-  },
-  {
-    title: 'Expense Tracker',
-    description:
-      'Manage your money effortlessly with the Expense Tracker app. Keep track of your daily expenses and stay on top of your budget.',
-    tech: ['React', 'Tailwind CSS'],
-    image: Image3,
-    demo: 'https://expensetracker-tau-ten.vercel.app/',
-    github: 'https://github.com/rishabhtivari428-max/expensetracker',
-  },
-]
 
 const fullstackProjects = [
   {
@@ -47,7 +18,7 @@ const fullstackProjects = [
     description:
       'A scalable MERN-stack platform built to streamline hostel discovery, direct tenant-owner communications, and real-time inquiry workflows.',
     tech: ['Node.js', 'React', 'MongoDB', 'Express'],
-    image: NestInImg,
+    image: NestInsecond,
     demo: 'https://nest-in-hostel-booking-platform.vercel.app/',
     github: 'https://github.com/rishabhtivari428-max/NestIn-Hostel-booking-platform',
   },
@@ -77,6 +48,36 @@ const fullstackProjects = [
     image: Image4,
     demo: 'https://bloginstaa.netlify.app/',
     github: 'https://github.com/rishabhtivari428-max/BlogInsta/tree/main',
+  },
+]
+
+const frontendProjects = [
+  {
+    title: 'Notes App',
+    description:
+      'A responsive Notes App built with React and Tailwind CSS with CRUD functionality and LocalStorage support.',
+    tech: ['React', 'Tailwind CSS', 'JS'],
+    image: Image,
+    demo: 'https://vite-react-iyi1.vercel.app/',
+    github: 'https://github.com/rishabhtivari428-max/notes-app',
+  },
+  {
+    title: 'Weather App',
+    description:
+      'A responsive weather application built using React.js that fetches real-time weather data from an external API.',
+    tech: ['React', 'Tailwind CSS'],
+    image: WeatherImage,
+    demo: 'https://weather-app-delta-neon.vercel.app/',
+    github: 'https://github.com/rishabhtivari428-max/Weather-app',
+  },
+  {
+    title: 'Expense Tracker',
+    description:
+      'Manage your money effortlessly with the Expense Tracker app. Keep track of your daily expenses and stay on top of your budget.',
+    tech: ['React', 'Tailwind CSS'],
+    image: Image3,
+    demo: 'https://expensetracker-tau-ten.vercel.app/',
+    github: 'https://github.com/rishabhtivari428-max/expensetracker',
   },
 ]
 
@@ -164,25 +165,25 @@ const Projects = () => {
     <section id='projects' ref={sectionRef} className='py-20'>
       <div className='container mx-auto px-6 sm:px-12'>
         <h2 className='projects-heading text-3xl sm:text-4xl font-bold mb-3 text-center text-lime-400'>
-          Frontend Projects
-        </h2>
-        <div className='flex justify-center mb-10'>
-          <div className='w-20 h-[2px] bg-lime-400 rounded-full'></div>
-        </div>
-        <div className='flex flex-wrap justify-center gap-8 mb-20'>
-          {frontendProjects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
-        </div>
-
-        <h2 className='projects-heading text-3xl sm:text-4xl font-bold mb-3 text-center text-lime-400'>
           Full Stack Projects
         </h2>
         <div className='flex justify-center mb-10'>
           <div className='w-20 h-[2px] bg-lime-400 rounded-full'></div>
         </div>
-        <div className='flex flex-wrap justify-center gap-8'>
+        <div className='flex flex-wrap justify-center gap-8 mb-20'>
           {fullstackProjects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
+
+        <h2 className='projects-heading text-3xl sm:text-4xl font-bold mb-3 text-center text-lime-400'>
+          Frontend Projects
+        </h2>
+        <div className='flex justify-center mb-10'>
+          <div className='w-20 h-[2px] bg-lime-400 rounded-full'></div>
+        </div>
+        <div className='flex flex-wrap justify-center gap-8'>
+          {frontendProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
