@@ -9,6 +9,7 @@ import Image5 from '../assets/Image5.jpg'
 import Image6 from '../assets/Image6.jpg'
 import NestInImg from '../assets/NestIn.jpg'
 import NestInsecond from '../assets/NestInsecond.jpg'
+import CareerLink from '../assets/CareerLink.jpg'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -36,7 +37,7 @@ const fullstackProjects = [
     description:
       'A fullstack job portal where recruiters and company managers find candidates and can select them for interviews; candidates can apply for jobs easily.',
     tech: ['Node.js', 'React', 'MongoDB', 'Express'],
-    image: Image6,
+    image: CareerLink,
     demo: 'https://career-link-ey8l-blush.vercel.app/',
     github: 'https://github.com/rishabhtivari428-max/CareerLink',
   },
